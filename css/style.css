@@ -844,6 +844,22 @@ body {
     
 }
 
+@media screen and (min-width : 568px) {
+
+    .qualificationSections {
+        display: grid;
+        grid-template-columns: .6fr;
+        justify-content: center;
+    }
+
+    .portfolioContent,
+    .contactContainer,
+    .footerContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
 @media screen and (min-width : 768px){
 
     .section{
@@ -879,6 +895,10 @@ body {
 
     .navMenu{
         margin-left: auto;
+    }
+
+    .footerContainer {
+        grid-template-columns: repeat(3, 1fr);
     }
     
 }
