@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/index.js"></script>
+</head>
+<body>
+    <main>
+        <div id="sideMenu">
+            <p style="cursor: pointer;" onclick="closeNav()">&times</p>
+            <p>Accueil</p>
+            <p>CV</p>
+            <p>Portfolio</p>
+            <p>Contacts</p>
+        </div>
+        <!-- <header class="menuBarre">
+            <div class="headerNname">
+                <p>KONAKE<br>Adama</p>
+            </div>
+            <div class="navBar">
+                <a href="#accueil"><p>Accueil</p></a>
+                <a href="#propos"><p>A Propos</p></a>
+                <a href="#portfolio"><p>Portfolio</p></a>
+                <p>Contacts</p>
+            </div>
+            <div onclick="openNav()" class="menuIcon">&#9776</div>
+        </header> -->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="navLogo">Adama</a>
+                <div class="navMenu" id="nav-menu">
+                    <ul class="navList grid">
+                        <li class="navItem">
+                            <a href="#accueil" class="navLink active-link">
+                                <img src="./assets/home_icon.png" alt="" srcset=""> Accueil
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#propos" class="navLink">
+                                <img src="./assets/user_icon.png" alt="" srcset=""> A propos
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#portfolio" class="navLink">
+                                <img src="./assets/portfolio_icon.png" alt="" srcset=""> Portfolio
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#contact" class="navLink">
+                                <img src="./assets/send_icon_black.png" alt="" srcset=""> Contactez-moi
+                            </a>
+                        </li>
+                    </ul>
+                    <img class="navClose" src="./assets/close_icon.png" alt="" srcset="" id="nav-close">
+                </div>
+
+                <div class="navBtns">
+                    <!-- Theme change btn -->
+                    <!-- <img class="change-theme" id="theme-button" src="./assets/moon_icon.png" alt="" srcset=""> -->
+                    
+                    <div class="navToggle" id="nav-toggle">
+                        <img src="./assets/menu_icon.png" alt="" srcset="">
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="sectionAccueil" id="accueil">
+            <div class="accueilLeft">
+                <div class="trapezeDiv">
+                    <div class="trapeze"></div>
+                </div>
+                <p style="font-size: 30px; margin: 0px 0px 10px 0px;">Bonjour</p>
+                <span>Je suis,</span>
+                <h1>KONAKE Adama</h1>
+                <span>Devéloppeur full stack</span>
+                <p>Je suis un développeur web et mobile (fullstack) passionné<br> par l'art de créer des solutions numériques innovantes.
+                <br>J'aime travaillé en équipe et je peux aussi mener des projets<br> web ou mobile.</p>
+                <a class="linkDwnd" href="#contact">
+                    <div class="sectionAccueilContactDiv">
+                        <p>Contactez-moi</p>
+                        <img src="./assets/right_icon.png" alt="" srcset="">
+                    </div>
+                </a>
+            </div>
+            <div class="accueilRight">
+                <div class="profilDiv">
+                    <svg class="homeBlobo" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                            130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                            97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                            0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                            165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                            129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                            -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                            <image class="homeBlobImg"  href="assets/profil.jpg"/>
+                        </g>
+                    </svg>
+                    <div class="prog">
+                        <p> < / ></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sectionApropos" id="propos">
+            <div class="aproposBackDiv">
+                <p class="aproposBack" >A PROPOS</p>
+                <span class="aprpos">A PROPOS</span>
+            </div> 
+            <div class="experienceDiv">
+                <div class="experienceDivLeft">
+                    <p class="infosPerso">INFORMATIONS PERSONNELLES</p>
+                    <div class="labelInfos">
+                        <div class="labelLeft">
+                            <p>Prénom : <span>Adama</span></p>
+                            <p>Nom : <span>KONAKE</span></p>
+                            <!-- <p>Age : <span>24 ans</span></p> -->
+                            <p>Nationalité : <span>Malienne</span></p>
+                            <p>Status : <span>disponnible</span></p>
+                        </div>
+                        <div class="labelRight">
+                            <p>Adresse : <span>Bamako</span></p>
+                            <p>Numéro : <span>+223 74 51 33 82</span></p>
+                            <p>Email : <span>adamakonake@gmail.com</span></p>
+                            <!-- <p>Github : <span>adamakonake</span></p> -->
+                        <p>Langues : <span>Bambara, Français, Anglais(intermediaire)</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="experienceDivRight">
+                    <div class="projetsNumDiv">
+                        <div class="moth">
+                            <p class="chiffre">07<span>+</span></p>
+                            <p>MOIS<br>EXPERIENCE</p>
+                        </div>
+                        <div>
+                            <p class="chiffre">11<span>+</span></p>
+                            <p>PROJETS<br>REALISES</p>
+                        </div>
+                    </div>
+                    <div class="downloadDiv">
+                        <div class="dwnLogoDiv">
+                            <img class="dwnLogo" src="assets/logo_download.png" alt="" srcset="">
+                        </div>
+                        <p class="dwnText">TELECHARGER MON CV</p>
+                        <p class="dwnTextWrap">CV</p>
+                    </div>
+                </div>
+            </div>
+            <p class="competenceText">QUELQUES COMPETENCES</p>
+            <div class="comprtenceItemsDiv">
+                <div class="leftCompetence">
+                    <div class="itemCompetence">
+                        <div class="itemCompetenceHeader">
+                            <span>JAVA</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="itemCompetenceProgress" style="--i : 90%"></div>
+                    </div>
+                    <div class="itemCompetence">
+                        <div class="itemCompetenceHeader">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="itemCompetenceProgress" style="--i : 90%"></div>
+                    </div>
+                    <div class="itemCompetence">
+                        <div class="itemCompetenceHeader">
+                            <span>CSS</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="itemCompetenceProgress" style="--i : 70%"></div>
+                    </div>
+                    <div class="itemCompetence">
+                        <div class="itemCompetenceHeader">
+                            <span>SQL</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="itemCompetenceProgress" style="--i : 80%"></div>
+                    </div>
+                    <div class="itemCompetence">
+                        <div class="itemCompetenceHeader">
+                            <span>JAVASCRIPT / TYPESCRIPT</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="itemCompetenceProgress" style="--i : 60%"></div>
+                    </div>
+                    <div class="itemCompetence">
+                        <div class="itemCompetenceHeader">
+                            <span>PHP</span>
+                            <span>45%</span>
+                        </div>
+                        <div class="itemCompetenceProgress" style="--i : 45%"></div>
+                    </div>
+                </div>
+                <div class="rightCompetence">
+                    <div class="itemCompetence">
+                        <div class="itemCompetenceHeader">
+                            <span>SPRING BOOT</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="itemCompetenceProgress" style="--i : 90%"></div>
+                    </div>
+                    <div class="itemCompetence">
+                        <div class="itemCompetenceHeader">
+                            <span>ANGULAR</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="itemCompetenceProgress" style="--i : 75%"></div>
+                    </div>
+                    <div class="itemCompetence">
+                        <div class="itemCompetenceHeader">
+                            <span>IONIC</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="itemCompetenceProgress" style="--i : 70%"></div>
+                    </div>
+                    <div class="itemCompetence">
+                        <div class="itemCompetenceHeader">
+                            <span>FLUTTER</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="itemCompetenceProgress" style="--i : 80%"></div>
+                    </div>
+                    <div class="itemCompetence">
+                        <div class="itemCompetenceHeader">
+                            <span>WORDPRESS</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="itemCompetenceProgress" style="--i : 60%"></div>
+                    </div>
+                    <div class="itemCompetence">
+                        <div class="itemCompetenceHeader">
+                            <span>FIGMA</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="itemCompetenceProgress" style="--i : 80%"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="educationText">EDUCATION & EXPERIENCE</p>
+            <div class="qualificationContainer container">
+                <div class="qualificationTabs">
+                    <div class="qualificationButtons tabActive" id="educationTab">
+                        <img src="./assets/thoze-noir.png" alt="" srcset="">
+                        Education
+                    </div>
+                    <div class="qualificationButtons" id="workTab">
+                        <img src="./assets/work_noir.png" alt="" srcset="">
+                        Expérience
+                    </div>
+                </div>
+
+                <div class="qualificationSections">
+                    <!-- Qualification content 1 -->
+                    <div class="qualifiactionContent qualificationActive" id="education">
+                        <div class="qualificationData">
+                            <div>
+                                <h3 class="qualificationTitre">Licence Génie Logiciel</h3>
+                                <span class="qualificationSubTitre">FST de Bamako</span>
+                                <div class="qualificationDate">
+                                    <img src="./assets/calendar_noir.png" alt="" srcset="">
+                                    2017 - 2021
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualificationRond"></span>
+                                <span class="qualificationLine"></span>
+                            </div>
+                        </div>
+                        <div class="qualificationData">
+                            <div></div>
+
+                            <div>
+                                <span class="qualificationRond"></span>
+                                <span class="qualificationLine"></span>
+                            </div>
+                            
+                            <div>
+                                <h3 class="qualificationTitre">Baccalauréat malien (BAC-TECH.GMI-Génie Minier)</h3>
+                                <span class="qualificationSubTitre">Lycée Technique de Bamako</span>
+                                <div class="qualificationDate">
+                                    <img src="./assets/calendar_noir.png" alt="" srcset="">
+                                    2014 - 2017
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Qualification content 2 -->
+                    <div class="qualifiactionContent" id="work">
+                        <div class="qualificationData">
+                            <div>
+                                <h3 class="qualificationTitre">Développeur Full Stack</h3>
+                                <span class="qualificationSubTitre">Orange Digital Center (ODC)</span>
+                                <div class="qualificationDate">
+                                    <img src="./assets/calendar_noir.png" alt="" srcset="">
+                                    Avril 2023 - Novembre 2023
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualificationRond"></span>
+                                <span class="qualificationLine"></span>
+                            </div>
+                        </div>
+                        <div class="qualificationData">
+                            <div></div>
+
+                            <div>
+                                <span class="qualificationRond"></span>
+                                <span class="qualificationLine"></span>
+                            </div>
+                            
+                            <div>
+                                <h3 class="qualificationTitre">Attestation de formation TIC & Entrepreneriat</h3>
+                                <span class="qualificationSubTitre">ISOC-MALI</span>
+                                <div class="qualificationDate">
+                                    <img src="./assets/calendar_noir.png" alt="" srcset="">
+                                    Janvier 2021
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="qualificationData">
+                            <div>
+                                <h3 class="qualificationTitre">Certificat de formation Seeds For The Future</h3>
+                                <span class="qualificationSubTitre">HUAWEI</span>
+                                <div class="qualificationDate">
+                                    <img src="./assets/calendar_noir.png" alt="" srcset="">
+                                    Octobre 2020
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualificationRond"></span>
+                                <span class="qualificationLine"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio section" id="portfolio">
+            <div class="aproposBackDiv">
+                <p class="aproposBack">PORTFOLIO</p>
+                <span class="aprpos">PORTFOLIO</span>
+            </div> 
+
+            <div class="portfolioContainer container swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="portfolioContent grid swiper-slide">
+                        <img src="./assets/portfolio1.jpg" alt="" srcset="" class="portfolioImg">
+
+                        <div class="portfolioData">
+                            <h3 class="portfolioTitre">Portail ODK</h3>
+                            <p class="portfolioDescription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, iste in sunt vitae doloribus tempore quos! Fugit, nisi dolorem, possimus cum voluptas quidem quo fuga aliquam non dicta reprehenderit iure.</p>
+                            <a href="#" class="buttonPortfolio">
+                                <div class="visiteBtn">
+                                    <img src="./assets/visit_icon.png" alt="" srcset="">
+                                    <p>Visitez</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolioContent grid swiper-slide">
+                        <img src="./assets/portfolio2.jpg" alt="" srcset="" class="portfolioImg">
+
+                        <div class="portfolioData">
+                            <h3 class="portfolioTitre">Portail ODK</h3>
+                            <p class="portfolioDescription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, iste in sunt vitae doloribus tempore quos! Fugit, nisi dolorem, possimus cum voluptas quidem quo fuga aliquam non dicta reprehenderit iure.</p>
+                            <a href="#" class="buttonPortfolio">
+                                <div class="visiteBtn">
+                                    <img src="./assets/visit_icon.png" alt="" srcset="">
+                                    <p>Visitez</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolioContent grid swiper-slide">
+                        <img src="./assets/portfolio3.jpg" alt="" srcset="" class="portfolioImg">
+
+                        <div class="portfolioData">
+                            <h3 class="portfolioTitre">Portail ODK</h3>
+                            <p class="portfolioDescription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, iste in sunt vitae doloribus tempore quos! Fugit, nisi dolorem, possimus cum voluptas quidem quo fuga aliquam non dicta reprehenderit iure.</p>
+                            <a href="#" class="buttonPortfolio">
+                                <div class="visiteBtn">
+                                    <img src="./assets/visit_icon.png" alt="" srcset="">
+                                    <p>Visitez</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next">
+                    <img class="swiper-pagination-icon" src="./assets/right_black.png" alt="" srcset="">
+                </div>
+                <div class="swiper-button-prev">
+                    <img class="swiper-pagination-icon" src="./assets/left_black.png" alt="" srcset="">
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- ############################################################################################"" -->
+
+        <!-- <?php
+
+            use PHPMailer\PHPMailer\PHPMailer;
+            use PHPMailer\PHPMailer\SMTP;
+            use PHPMailer\PHPMailer\Exception;
+
+            require 'PHPMailer/src/Exception.php';
+            require 'PHPMailer/src/PHPMailer.php';
+            require 'PHPMailer/src/SMTP.php';
+
+            echo '<form action="http://localhost/portfolio" method="post">';
+            echo '<p>';
+            echo '<span class="testg" style="color : black;">Votre Email <span style ="color : red;">*</span><br />';
+            echo '<input type="email" name="cf-email" value="' . ( isset( $_POST["cf-email"] ) ? htmlspecialchars( $_POST["cf-email"] ) : '' ) . '" size="40" style="height : 40px" />';
+            echo '</p>';
+            echo '<p>';
+            echo "<span style ='color : white;'>Votre Nom <span style ='color : red;'>*</span></span> <br />";
+            echo '<input type="text" name="cf-name" pattern="[a-zA-Z0-9 ]+" value="' . ( isset( $_POST["cf-name"] ) ? htmlspecialchars( $_POST["cf-name"] ) : '' ) . '" size="40" style="height : 40px" />';
+            echo '</p>';
+            echo '<p>';
+            echo "<span style='color : white;'>Your Message <span style ='color : red;'>*</span><br />";
+            echo '<textarea rows="10" cols="35" name="cf-message">' . ( isset( $_POST["cf-message"] ) ? htmlspecialchars( $_POST["cf-message"] ) : '' ) . '</textarea>';
+            echo '</p>';
+            // echo '<p>';
+            // echo 'Subject (required) <br />';
+            // echo '<input type="text" name="cf-subject" pattern="[a-zA-Z ]+" value="' . ( isset( $_POST["cf-subject"] ) ? esc_attr( $_POST["cf-subject"] ) : '' ) . '" size="40" />';
+            // echo '</p>';
+            echo '<p><input type="submit" name="cf-submitted" value="Envoyer" style="width : 100%" /></p>';
+            echo '</form>';
+
+            if ( isset( $_POST['cf-submitted'] ) ) {
+
+                try {
+
+                    //Create an instance; passing `true` enables exceptions
+                    $mail = new PHPMailer; //$mail = new PHPMailer(true); ancien
+
+                    // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+                    $mail->isSMTP();                                            //Send using SMTP
+                    $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+                    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+                    $mail->Username   = 'bamakosheraton@gmail.com';                     //SMTP username
+                    $mail->Password   = 'xnaxufgeffoocbva';                               //SMTP password
+                    // $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+                    $mail->Port       = 587;  //465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
+                    // sanitize form values
+                    $name    = htmlspecialchars( $_POST["cf-name"] );
+                    $email   = htmlspecialchars( $_POST["cf-email"] );
+                    // $subject = sanitize_text_field( $_POST["cf-subject"] );
+                    $message = htmlspecialchars( $_POST["cf-message"] );
+            
+                    // get the blog administrator's email address
+                    // $to = get_option( 'admin_email' );
+
+                    //Recipients
+                    $mail->setFrom('bamakosheraton@gmail.com','Portfolio');
+                    $mail->addAddress('adamakonake@gmail.com');     //Add a recipient
+            
+                    $headers = "From: $name <$email>" . "\r\n";
+
+                    $mail->addReplyTo($email, $name);
+                    $mail->Subject = 'Contact Portfolio';
+                    $mail->isHTML(false);
+                    $mail->Body = "Email: $email\nNom: $name\nMessage: $message";
+
+                    if (!$mail->send()) {
+                        echo 'Désolé, quelque chose a mal tourné. Veuillez réessayer plus tard.';
+                    } else {
+                        echo 'Message envoyé ! Merci de nous avoir contactés.';
+                    }
+            
+                } catch (Exception $e) {
+                    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+                }
+            }
+
+        ?> -->
+
+        <!-- ############################################################################################"" -->
+        <section class="contact section" id="contact">
+            <div class="aproposBackDiv">
+                <p class="aproposBack">CONTACTS</p>
+                <span class="aprpos">CONTACTS</span>
+            </div>
+
+            <div class="contactContainer container grid">
+                <div>
+                    <div class="contactInformation">
+                        <img src="./assets/tel_icon_black.png" alt="" srcset="">
+                        <div>
+                            <h3 class="contactTitre">Appelez-moi</h3>
+                            <span class="contactSubTitre">+223 64-30-19-84</span>
+                        </div>
+                    </div>
+                    <div class="contactInformation">
+                        <img src="./assets/message_icon_black.png" alt="" srcset="">
+                        <div>
+                            <h3 class="contactTitre">Email</h3>
+                            <a class="contactSubTitre" href="mailto:">adamakonake@gmail.com</a>
+                            <!-- <span class="contactSubTitre"></span> -->
+                        </div>
+                    </div>
+                    <div class="contactInformation">
+                        <img src="./assets/localisation_icon_black.png" alt="" srcset="">
+                        <div>
+                            <h3 class="contactTitre">Localisation</h3>
+                            <span class="contactSubTitre">Bamakon-Coura, Bamako, Mali</span>
+                        </div>
+                    </div>
+
+                    <form action="" class="contactForm grid">
+                        <div class="contactInputs grid">
+                            <div class="contactContent">
+                                <label for="" class="contactLabel">Nom</label>
+                                <input type="text" class="contactInput">
+                            </div>
+                            <div class="contactContent">
+                                <label for="" class="contactLabel">Email</label>
+                                <input type="email" class="contactInput">
+                            </div>
+                        </div>
+                        <div class="contactContent">
+                            <label for="" class="contactLabel">Message</label>
+                            <textarea name="" id="" cols="0" rows="7" class="contactInput"></textarea>
+                        </div>
+                        <div>
+                            <a href="#" class="sendBtn">
+                                Envoyer Message
+                                <img src="./assets/send_icon_white.png" alt="" srcset="">
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footerBg">
+            <div class="footerContainer container grig">
+                <div>
+                    <h1 class="footerTitre">Adama</h1>
+                    <span class="footerSubTitre">Développeur Full Stack</span>
+                </div>
+
+                <ul class="footerLinks">
+                    <li>
+                        <a href="#portfolio" class="footerLink">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footerLink">Contacts</a>
+                    </li>
+                </ul>
+                
+                <div class="footerSocials">
+                    <a href="#" target="_blank" class="footerSocial">
+                        <img src="./assets/facebook_icon.png" alt="" srcset="">
+                    </a>
+                    <a href="#" target="_blank" class="footerSocial">
+                        <img src="./assets/instagram_icon.png" alt="" srcset="">
+                    </a>
+                    <a href="#" target="_blank" class="footerSocial">
+                        <img src="./assets/linkedin_icon.png" alt="" srcset="">
+                    </a>
+                </div>
+            </div>
+
+            <p class="footerCopy">&#169; Tout droit reservé</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to top -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <img src="./assets/top_white.png" alt="" srcset="">
+    </a>
+</body>
+</html>
