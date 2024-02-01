@@ -210,7 +210,8 @@ body {
 /* Section accueil */
 
 .sectionAccueil {
-    margin-top: 120px;
+    /* margin-top: 196px; */
+    padding-top: 196px;
     margin-bottom: 30px;
     padding-left: 15px;
     padding-right: 15px;
@@ -618,13 +619,15 @@ body {
 
 .portfolioContent {
     padding: 0 1.5rem;
-    grid-template-columns: auto auto;
+    /* grid-template-columns: auto auto; */
 }
 
 .portfolioImg {
-    width: 265px;
+    width: 80%;
+    /* width: 265px; */
     border-radius: .5rem;
     justify-self: center;
+    border: 1px solid black;
 }
 
 .portfolioTitre {
@@ -852,7 +855,7 @@ body {
         justify-content: center;
     }
 
-    .portfolioContent,
+    /* .portfolioContent, */
     .contactContainer,
     .footerContainer {
         grid-template-columns: repeat(2, 1fr);

@@ -6,8 +6,10 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
+    
     <script defer src="js/swiper-bundle.min.js"></script>
     <script defer src="js/index.js"></script>
+  
 </head>
 <body>
     <main>
@@ -32,7 +34,7 @@
         </header> -->
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="#" class="navLogo">Adama</a>
+                <p>Adama</p>
                 <div class="navMenu" id="nav-menu">
                     <ul class="navList grid">
                         <li class="navItem">
@@ -366,7 +368,7 @@
 
                         <div class="portfolioData">
                             <h3 class="portfolioTitre">Portail ODK</h3>
-                            <p class="portfolioDescription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, iste in sunt vitae doloribus tempore quos! Fugit, nisi dolorem, possimus cum voluptas quidem quo fuga aliquam non dicta reprehenderit iure.</p>
+                            <p class="portfolioDescription">Portail ODK est un site portail qui permet aux formateur de odk d'avoir la photo et les informations complètes de tous les apprenants certifiés de odk afin d'assurer une gestion efficace. Cet site à été développer avec HTML, CSS, JavaScript et PHP et MysqL comme système de gestion de base de données.</p>
                             <a href="#" class="buttonPortfolio">
                                 <div class="visiteBtn">
                                     <img src="./assets/visit_icon.png" alt="" srcset="">
@@ -376,11 +378,11 @@
                         </div>
                     </div>
                     <div class="portfolioContent grid swiper-slide">
-                        <img src="./assets/portfolio2.jpg" alt="" srcset="" class="portfolioImg">
+                        <img src="./assets/projet_gest_projet.png" alt="" srcset="" class="portfolioImg">
 
                         <div class="portfolioData">
-                            <h3 class="portfolioTitre">Portail ODK</h3>
-                            <p class="portfolioDescription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, iste in sunt vitae doloribus tempore quos! Fugit, nisi dolorem, possimus cum voluptas quidem quo fuga aliquam non dicta reprehenderit iure.</p>
+                            <h3 class="portfolioTitre">Tabeli (gestion de projet)</h3>
+                            <p class="portfolioDescription">Tabeli est une application web de gestion de projet, elle permet aux utilisateur de gerer leurs projets en toute simplicité, en invitant des collaborateurs et en attribuant des tâches aux collaborateurs. Elle à été développer avec le framework Angular.</p>
                             <a href="#" class="buttonPortfolio">
                                 <div class="visiteBtn">
                                     <img src="./assets/visit_icon.png" alt="" srcset="">
@@ -390,11 +392,39 @@
                         </div>
                     </div>
                     <div class="portfolioContent grid swiper-slide">
-                        <img src="./assets/portfolio3.jpg" alt="" srcset="" class="portfolioImg">
+                        <img src="./assets/projet_panneau_deme.png" alt="" srcset="" class="portfolioImg">
 
                         <div class="portfolioData">
-                            <h3 class="portfolioTitre">Portail ODK</h3>
-                            <p class="portfolioDescription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, iste in sunt vitae doloribus tempore quos! Fugit, nisi dolorem, possimus cum voluptas quidem quo fuga aliquam non dicta reprehenderit iure.</p>
+                            <h3 class="portfolioTitre">Panneau deme</h3>
+                            <p class="portfolioDescription">Panneau Dèmè est une application mobile, elle permet de faire le dimensionnement d'installation solaire des appareils renseignés par l'utilisateur. Elle à été développer avec Flutter côté front-end et Spring Boot côté back-end.</p>
+                            <a href="#" class="buttonPortfolio">
+                                <div class="visiteBtn">
+                                    <img src="./assets/visit_icon.png" alt="" srcset="">
+                                    <p>Visitez</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolioContent grid swiper-slide">
+                        <img src="./assets/projet_musaka.png" alt="" srcset="" class="portfolioImg">
+
+                        <div class="portfolioData">
+                            <h3 class="portfolioTitre">Musaka</h3>
+                            <p class="portfolioDescription">Musaka est une application mobile de gestion de budget, elle permet aus utilisateurs de gerer leurs budgets en toute simplicité en enregistrant leurs budget mensuel et leurs dépenses.Elle leurs permet aussi d'avoir un statistique sur leurs dépenses. L'application à été développer avec Flutter côté front-end et Spring Boot côté back-end.</p>
+                            <a href="#" class="buttonPortfolio">
+                                <div class="visiteBtn">
+                                    <img src="./assets/visit_icon.png" alt="" srcset="">
+                                    <p>Visitez</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolioContent grid swiper-slide">
+                        <img src="./assets/projet_muslimguide.png" alt="" srcset="" class="portfolioImg">
+
+                        <div class="portfolioData">
+                            <h3 class="portfolioTitre">Muslim Guide</h3>
+                            <p class="portfolioDescription">Muslim Guide est une application mobile qui permet aux utilisateurs de localisé les mosquées à proximité et d'avoir des informations sur ceux-ci tel que leurs horaires de prière, de prèches etc... L'application à été développer par le framework Ionic côté front-end et Firebase côté back-end.</p>
                             <a href="#" class="buttonPortfolio">
                                 <div class="visiteBtn">
                                     <img src="./assets/visit_icon.png" alt="" srcset="">
@@ -529,28 +559,40 @@
                     </div>
                 </div>
 
-                <form action="" class="contactForm grid">
+                <form id="form" class="contactForm grid">
                     <div class="contactInputs grid">
                         <div class="contactContent">
                             <label for="" class="contactLabel">Nom</label>
-                            <input type="text" class="contactInput">
+                            <input type="text"name="nom_id" id="nom_id" class="contactInput">
                         </div>
                         <div class="contactContent">
                             <label for="" class="contactLabel">Email</label>
-                            <input type="email" class="contactInput">
+                            <input type="email"  name="email_id" id="email_id" class="contactInput">
                         </div>
                     </div>
                     <div class="contactContent">
                         <label for="" class="contactLabel">Message</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contactInput"></textarea>
+                        <textarea name="message" id="message" cols="0" rows="7" class="contactInput"></textarea>
                     </div>
                     <div>
-                        <a href="#" class="sendBtn">
+                        <!-- <button id="button" class="sendBtn" type="submit">
                             Envoyer Message
                             <img src="./assets/send_icon_white.png" alt="" srcset="">
-                        </a>
+                        </button> -->
+                        <input class="sendBtn" type="submit" id="button" value="Envoyer Message" >
+                        <!-- <input type="submit" value="Envoyer Message">t
+                        <a href="#" class="sendBtn" id="">
+                            Envoyer Message
+                            <img src="./assets/send_icon_white.png" alt="" srcset="">
+                        </a> -->
                     </div>
                 </form>
+                <script type="text/javascript"
+              src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+            
+            <script type="text/javascript">
+              emailjs.init('ccUyTBF0V61T1FyFS')
+            </script>
             </div>
         </section>
     </main>

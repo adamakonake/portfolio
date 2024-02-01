@@ -138,3 +138,24 @@ window.addEventListener('scroll', scrollUp)
 //     localStorage.setItem('selected-theme', getCurrentTheme())
 //     localStorage.setItem('selected-icon', getCurrentIcon())
 // })
+
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Envoie...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_f7bo8gl';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Envoyer message';
+      alert('Envoyer!');
+    }, (err) => {
+      btn.value = 'Envoyer message';
+      alert(JSON.stringify(err));
+    });
+});
