@@ -143,6 +143,16 @@ const btn = document.getElementById('button');
 
 document.getElementById('form')
  .addEventListener('submit', function(event) {
+    var nomInput = document.getElementById("nom_id"),
+    emailInput = document.getElementById("email_id"),
+    messageInput = document.getElementById("message"),
+    errorSpan = document.getElementById("errorSpan");
+
+    if(nomInput.value == "" || emailInput.value == "" || messageInput.value == ""){
+        alert("Veuillez remplir toutes les champs");
+        return;
+    }
+
    event.preventDefault();
 
    btn.value = 'Envoie...';
